@@ -1,0 +1,31 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Upload</title>
+</head>
+
+<body>
+    <h1>Image Upload</h1>
+
+    <!-- Form để chọn file ảnh và lựa chọn -->
+    <form id="uploadForm" enctype="multipart/form-data" action="/upload" method="POST">
+        <label for="image">Select Image:</label>
+        <input type="file" id="image" name="image" accept="image/*" required>
+        
+        <label for="options">Select an Option:</label>
+        <select id="options" name="options">
+            <option value="option1">Option 1</option>
+            <option value="option2">Option 2</option>
+            <option value="option3">Option 3</option>
+        </select>
+
+        <!-- Nút Submit để gửi yêu cầu -->
+        <button type="submit">Submit</button>
+    </form>
+</body>
+
+</html>
